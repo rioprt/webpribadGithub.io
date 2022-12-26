@@ -1,0 +1,147 @@
+* {
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.medsos {
+    padding:5px 0;
+    background-color: #148F77;
+}
+.medsos ul li {
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+}
+.container {
+    width:80%;
+    margin:0 auto;
+}
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+header h1 {
+    float: left;
+    padding: 15px 0;
+    color: #148F77;
+}
+header ul {
+    float: right;
+}
+header ul li {
+    display: inline-block;
+}
+header ul li a {
+    padding: 25px 20px;
+    display: inline-block;
+}
+header ul li a:hover {
+    background-color: #148F77;
+    color: #fff;
+}
+.active {
+    background-color: #148F77;
+    color: #fff
+}
+.gambar {
+    height: 60vh;
+    background-image: url('../img/istockphoto-1336695502-170667a.jpg');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gambar::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(20, 143, 119, .6);
+}
+section {
+    padding: 50px 0;
+}
+.gambar h2 {
+    color: #fff;
+    z-index: 2;
+    padding: 20px 25px;
+    border: 3px solid #fff;
+}
+
+footer {
+    margin-top: 270px;
+    padding: 8px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.bg-loader {
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-loader .loader {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    border-top-color: #148F77;
+    border-right-color: #148F77;
+    border-bottom-color: #148F77;
+    animation: muter .5s linear infinite;
+}
+@keyframes muter {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.contact {
+    text-align: left;
+    color: #148F77;
+}
+.box {
+    color: #148F77;
+}
+.box:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.box .col-2 {
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+.icon {
+    width: 70px;
+    height: 70px;
+    border: 1px solid;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 20px;
+    margin: 0 auto;
+}
+.box cal-2 h4 {
+    margin: 15px 0;
+}
